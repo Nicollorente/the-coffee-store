@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kdam+Thmor+Pro&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+/* .img-logo {
+    width: 120px;
+    height: auto;
+    margin: 10px;
+    border-radius: 100px;
+  } */
+
+
+body{
+
+  overflow-x: hidden;
+    background-image: url("/img/background-coffee1.jpg");
+    background-size: cover;
+    background-position: center ;
+    /* margin-top: 80px; */
+}
+
+
+ul   {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    margin-top:-80px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 24px;
+  }
+  
+  a{
+      color: inherit;
+      text-decoration: none;
+  }
+  
+  li{
+      font-size: 20px;
+      transition: font-size 0.3s;
+      padding: 5px 220px;
+      margin-right: -80px;
+  }
+  
+  li:hover{
+      font-size: 24px;
+  }
+  
+
+
+
+
+
+  /* .img-price{
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    margin-bottom: 0;
+    margin-left: 50px;
+    margin-top: 30px;
+  } */
+
+  /* .menu-cafe{
+    color: rgb(255, 255, 255);
+    margin-top: 40px;
+    padding-left: 120px;
+    font-family: "Protest Riot", sans-serif;
+    
+  } */
+
+
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+
+#menu-cafes,#menu-batidos,#menu-desayunos{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center; 
+  margin-left: -50px;
+  animation-name: menus;
+  animation-duration: 5s;
+}
+
+
+  @keyframes menus {
+    0%{margin-left:180%;}
+    100%{margin-left: -50px;}
+  }
+
+
+  #text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    animation-name: text;
+    animation-duration: 5s;
+    color: white;
+    margin-top: 5px;
+    margin-left: -30px;
+    left: 500px;
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+
+  #text-milkshake{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    animation-name: text;
+    animation-duration: 5s;
+    color: white;
+    margin-top: 50px;
+    margin-left: -30px;
+    left: 500px;
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    font-weight: bold;
+  }
+
+
+  #text-desayunos{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    animation-name: text;
+    animation-duration: 5s;
+    color: white;
+    margin-top: 80px;
+    margin-left: -30px;
+    left: 500px;
+    font-family: "Dancing Script", cursive;
+    font-size: 35px;
+    font-weight: bold;
+
+  }
+
+  h2{
+    font-size: 70px;
+  }
+
+
+  @keyframes text {
+    0%{margin-right:100%;}
+    100%{margin-right: 0;}
+  }
+
+
+
+
+.border{
+  color: rgb(255, 255, 255);  
+  text-shadow:
+    -1px -1px 0 rgb(0, 0, 0), 
+    1px -1px 0 rgb(0, 0, 0),
+    -1px 1px 0 rgb(0, 0, 0),
+    1px 1px 0 rgb(0, 0, 0); 
+}
+
+.wave-cafe{
+  color: rgb(87, 61, 48);
+  animation: wave 3s ease-in-out infinite;
+  display: flex;
+  position: absolute;
+}
+
+.wave-milkshake{
+  color: rgba(241, 43, 224, 0.61);
+  animation: wave 3s ease-in-out infinite;
+  display: flex;
+  position: absolute;
+}
+
+.wave-desayunos{
+  color: rgba(23, 146, 53, 0.685);
+  animation: wave 3s ease-in-out infinite;
+  display: flex;
+  position: absolute;
+}
+
+@keyframes wave {
+  0%, 100% {
+    clip-path: polygon(
+      0% 47%,
+      10% 48%,
+      33% 54%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(0% 60%,
+    15% 65%,
+    34% 66%,
+    51% 62%,
+    67% 50%,
+    84% 45%,
+    100% 46%,
+    100% 100%,
+    0% 100%
+    );
+  }
+}
+
+
+
+
+  /*#menu-cafes*/ div img{
+    width: 140px;
+    border-radius: 200px;
+    margin: 40px;
+    display: flex;
+  } 
+
+
+  #menu-cafes .des{
+    background-color: black;
+    width: 160px;
+    height: 198px;
+    border-radius: 220px;
+    margin-left: 150px;
+    margin-top: -250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } 
+
+  #menu-batidos .des{
+    background-color: black;
+    width: 160px;
+    height: 198px;
+    border-radius: 220px;
+    margin-left: 150px;
+    margin-top: -250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  #menu-desayunos .des{
+    background-color: black;
+    width: 160px;
+    height: 198px;
+    border-radius: 220px;
+    margin-left: 150px;
+    margin-top: -250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+
+
+
+.price{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nitro-cold-brew p{
+  margin-right: -25px;
+}
+
+.honey-oat-latte p{
+  margin-right: -25px;
+}
+
+.espresso-and-tonic p{
+  margin-right: -25px;
+}
+
+.img-medialunas,.img-dona-medialuna{
+  width: 140px;
+  height: 200px;
+}
+
+
+  p{
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
